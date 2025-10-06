@@ -5,14 +5,17 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com', // Replace with your site URL
+  devToolbar: {
+    enabled: false,
+  },
+  site: 'https://example.com', 
   integrations: [
     tailwind(),
     sitemap(),
   ],
   markdown: {
     shikiConfig: {
-      theme: 'github-light',
+      theme: 'github-dark',
       wrap: true
     }
   }
