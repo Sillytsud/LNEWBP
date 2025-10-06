@@ -1,0 +1,112 @@
+---
+const title = "Page Not Found";
+const message = "Oops! Parece que te perdiste. La página que buscas no existe.";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <div class="content">
+          <h1>404</h1>
+          <h2>{title}</h2>
+          <p>{message}</p>
+          <a href="/" class="home-btn">Volver al inicio</a>
+        </div>
+        <div class="illustration">
+          <img src="uploads/doakes-removebg-preview.png" alt="se te perdio algo?" />
+        </div>
+      </section>
+    </main>
+
+    <style>
+      :root {
+        --accent: #0051ff;
+        --bg: #0d1117;
+        --text: #f0f6fc;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: "Inter", system-ui, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+        max-width: 600px;
+        padding: 2rem;
+      }
+
+      .illustration img {
+        width: 220px;
+        animation: float 4s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      h1 {
+        font-size: 5rem;
+        margin: 0;
+        color: var(--accent);
+        letter-spacing: 3px;
+      }
+
+      h2 {
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+        opacity: 0.85;
+      }
+
+      .home-btn {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.75rem 1.5rem;
+        background: var(--accent);
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: background 0.2s ease, transform 0.2s ease;
+      }
+
+      .home-btn:hover {
+        background: #32ff65;
+        transform: translateY(-2px);
+        color: black;
+      }
+
+      @media (prefers-color-scheme: light) {
+        :root {
+          --bg: #ffffff;
+          --text: #0a0a0a;
+        }
+      }
+    </style>
+  </body>
+</html>
