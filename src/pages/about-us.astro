@@ -5,129 +5,156 @@ import StaffList from "../components/Sections/StaffList.astro";
 ---
 
 <BaseLayout
-  title="About Us - Church Name"
-  description="Learn about our church's history, mission, values, and the people who make our community special."
+  title="Sobre Nosotros - La Nueva Esperanza"
+  description="Aprende sobre la historia, misión y valores de La Nueva Esperanza."
 >
   <PageHeader 
-    title="About Us" 
-    subtitle="Our History, Mission, and Values"
-    backgroundImage="https://images.unsplash.com/photo-1438032005730-c779502df39b?w=1920&h=600&fit=crop&crop=center"
+    title="Sobre Nosotros" 
+    subtitle="Nuestra Historia, Misión y Valores"
+    backgroundImage="/uploads/abtus.jpg"
   />
   
-  <!-- Mission & Vision -->
-  <section class="py-16">
-    <div class="container">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-6">
+    <!-- Fila superior: Misión e Imagen -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 items-center">
+      <div class="text-start shadow-sm">
+        <h2 class="text-3xl font-bold mb-4">Nuestra Misión</h2>
+        <p class="text-gray-700 text-lg">
+          Recuperación Integral y Esperanza. Nuestra misión es ofrecer un camino hacia la recuperación integral,
+          brindando esperanza y herramientas para un futuro libre de adicciones. Acompañamos cada proceso con empatía,
+          profesionalismo y compromiso humano.
+        </p>
+      </div>
+
+      <div class="rounded flex justify-center shadow-md">
+        <img 
+          src="/uploads/IMG-20240709-WA0035.jpg" 
+          alt="Proceso de rehabilitación" 
+          class="rounded-xl shadow-lg object-cover w-full max-h-[400px]"
+        />
+      </div>
+    </div>
+
+    <!-- Sección inferior: Visión -->
+    <div class="text-center">
+      <h2 class="text-3xl font-bold mb-4 text-gray-800">Nuestra Visión</h2>
+      <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-8">
+        Consolidarnos como una fundación referente en procesos de recuperación y reintegración social,
+        comprometida con transformar vidas y construir comunidades más sanas, solidarias y libres de adicciones.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
         <div>
-          <h2 class="text-3xl md:text-4xl font-bold mb-6">Our Mission</h2>
-          <p class="text-xl text-gray-700 mb-8">
-            To know Christ and to make Him known through worship, discipleship, fellowship, and service.
-          </p>
-          
-          <h2 class="text-3xl md:text-4xl font-bold mb-6">Our Vision</h2>
-          <p class="text-xl text-gray-700 mb-8">
-            To be a vibrant, growing community of believers who are transformed by the Gospel and transforming our community with the love of Christ.
-          </p>
+          <h4 class="italic text-xl font-semibold mb-2">Liderazgo</h4>
+          <p>Ser un modelo de programas efectivos y humanos en rehabilitación.</p>
         </div>
-        
         <div>
-          <img 
-            src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center" 
-            alt="Worship at our church" 
-            class="rounded-lg shadow-lg object-cover w-full h-full"
-          />
+          <h4 class="italic text-xl font-semibold mb-2">Transformación</h4>
+          <p>Promover un cambio real en la vida de las personas y sus comunidades.</p>
+        </div>
+        <div>
+          <h4 class="italic text-xl font-semibold mb-2">Inclusión</h4>
+          <p>Brindar apoyo sin estigmas ni discriminación.</p>
+        </div>
+        <div>
+          <h4 class="italic text-xl font-semibold mb-2">Esperanza</h4>
+          <p>Inspirar un nuevo comienzo basado en la fe, el respeto y la dignidad.</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
   
   <!-- Core Values -->
   <section class="py-16 bg-gray-50">
     <div class="container">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Core Values</h2>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Nuestros Valores Fundamentales</h2>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          These principles guide everything we do as a church community
+          Estos son los principios que guían todo lo que hacemos
         </p>
       </div>
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-white p-8 rounded-lg shadow-sm">
+        <div class="bg-white p-8 rounded-lg shadow-lg">
           <div class="w-16 h-16 rounded-full bg-primary-100 flex items-center justify-center mb-6">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
             </svg>
           </div>
-          <h3 class="text-xl font-bold mb-3">Biblical Teaching</h3>
+          <h3 class="text-xl font-bold mb-3">Empatía</h3>
           <p class="text-gray-700">
-            We are committed to teaching God's Word faithfully and helping people apply it to their lives. We believe the Bible is God's inspired, inerrant Word and our ultimate authority.
+            Creemos que cada historia merece ser escuchada sin juicios. Nos comprometemos a acompañar con comprensión y sensibilidad a quienes atraviesan procesos de rehabilitación, brindando apoyo emocional y humano en cada paso de su camino hacia la recuperación.
           </p>
         </div>
         
-        <div class="bg-white p-8 rounded-lg shadow-sm">
+        <div class="bg-white p-8 rounded-lg shadow-lg">
           <div class="w-16 h-16 rounded-full bg-secondary-100 flex items-center justify-center mb-6">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-secondary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
             </svg>
           </div>
-          <h3 class="text-xl font-bold mb-3">Authentic Community</h3>
+          <h3 class="text-xl font-bold mb-3">Esperanza</h3>
           <p class="text-gray-700">
-            We believe spiritual growth happens best in community. We foster genuine relationships where people can be known, loved, and challenged to grow in their faith.
+            Promovemos la fe en las segundas oportunidades. Sabemos que superar una adicción es posible y trabajamos para inspirar confianza en el cambio, ayudando a cada persona a descubrir su valor y su capacidad de transformar su vida.
           </p>
         </div>
         
-        <div class="bg-white p-8 rounded-lg shadow-sm">
+        <div class="bg-white p-8 rounded-lg shadow-lg">
           <div class="w-16 h-16 rounded-full bg-accent-100 flex items-center justify-center mb-6">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-accent-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
             </svg>
           </div>
-          <h3 class="text-xl font-bold mb-3">Missional Living</h3>
+          <h3 class="text-xl font-bold mb-3">Respeto</h3>
           <p class="text-gray-700">
-            We believe every follower of Jesus is called to share His love with others. We equip and encourage our members to live on mission in their neighborhoods, workplaces, and beyond.
+            Valoramos la dignidad de cada individuo, sin importar su pasado. Fomentamos un ambiente seguro donde todos sean tratados con consideración, equidad y libertad, fortaleciendo su autoestima y sentido de pertenencia.
           </p>
         </div>
         
-        <div class="bg-white p-8 rounded-lg shadow-sm">
+        <div class="bg-white p-8 rounded-lg shadow-lg">
           <div class="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mb-6">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
-          <h3 class="text-xl font-bold mb-3">Spiritual Growth</h3>
+          <h3 class="text-xl font-bold mb-3">Solidaridad</h3>
           <p class="text-gray-700">
-            We are committed to helping people grow in their relationship with Christ, becoming more like Him in their thoughts, words, and actions through discipleship and spiritual practices.
+            Creemos en la fuerza del apoyo mutuo. Impulsamos el trabajo en comunidad, donde pacientes, familias y profesionales se unen para construir juntos procesos de sanación, aprendizaje y crecimiento compartido.
           </p>
         </div>
         
-        <div class="bg-white p-8 rounded-lg shadow-sm">
+        <div class="bg-white p-8 rounded-lg shadow-lg">
           <div class="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center mb-6">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
             </svg>
           </div>
-          <h3 class="text-xl font-bold mb-3">Spirit-Led Worship</h3>
+          <h3 class="text-xl font-bold mb-3">Responsabilidad</h3>
           <p class="text-gray-700">
-            We value authentic, heartfelt worship that glorifies God and transforms lives. We seek to create environments where people can encounter God's presence.
+            Asumimos con compromiso ético cada acción y decisión. Nos guiamos por la integridad, la transparencia y la coherencia en todo lo que hacemos, garantizando procesos terapéuticos seguros, respetuosos y profesionales.
           </p>
         </div>
         
-        <div class="bg-white p-8 rounded-lg shadow-sm">
+        <div class="bg-white p-8 rounded-lg shadow-lg">
           <div class="w-16 h-16 rounded-full bg-yellow-100 flex items-center justify-center mb-6">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
             </svg>
           </div>
-          <h3 class="text-xl font-bold mb-3">Servant Leadership</h3>
+          <h3 class="text-xl font-bold mb-3">Transformación</h3>
           <p class="text-gray-700">
-            We believe leadership is about service, not status. We develop and empower leaders who model Christ-like humility and sacrifice as they guide others.
+            Nuestro propósito es generar un cambio real. Más allá de la rehabilitación, buscamos que cada persona recupere su proyecto de vida, fortalezca su mente, cuerpo y espíritu, y se reintegre a la sociedad con nuevas metas y sentido.
           </p>
         </div>
       </div>
     </div>
   </section>
   
-  <!-- Church History -->
+  {/*
+<!-- Church History -->
   <section class="py-16">
     <div class="container">
       <div class="text-center mb-12">
@@ -200,6 +227,7 @@ import StaffList from "../components/Sections/StaffList.astro";
       </div>
     </div>
   </section>
+   */}
   
   <!-- Leadership Team Preview -->
   <section class="py-16 bg-gray-50">
