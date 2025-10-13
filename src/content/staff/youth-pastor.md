@@ -1,10 +1,10 @@
 ---
-name: "Rev. Michael Johnson"
-title: "Youth Pastor"
-image: "/uploads/staff/michael-johnson.webp"
-email: "michael.johnson@churchname.org"
+name: "Erik Gomez"
+title: "Otro pendejo"
+image: "/uploads/staff/erik.png"
+email: "erikpugyt@gmail.com"
 phone: "+1-555-0103"
-bio: "Pastor Michael leads our vibrant youth ministry with energy and vision, helping young people discover their identity in Christ."
+bio: "Barbagris"
 order: 3
 draft: false
 ---

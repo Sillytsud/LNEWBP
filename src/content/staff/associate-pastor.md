@@ -1,10 +1,10 @@
 ---
-name: "Rev. Sarah Martinez"
-title: "Associate Pastor & Women's Ministry Director"
-image: "/uploads/staff/sarah-martinez.webp"
-email: "sarah.martinez@churchname.org"
+name: "David Velez"
+title: "un puto pendejo"
+image: "/uploads/staff/velez.jpg"
+email: "velezxcanas@gmail.com"
 phone: "+1-555-0102"
-bio: "Pastor Sarah leads our women's ministry and provides pastoral care with a heart for discipleship and community building."
+bio: "nose"
 order: 2
 draft: false
 ---

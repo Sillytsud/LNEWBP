@@ -27,13 +27,13 @@ const { Content } = await entry.render();
 ---
 
 <BaseLayout
-  title={`${entry.data.name} - Church Name`}
+  title={`${entry.data.name} - Fundación La Nueva Esperanza`}
   description={entry.data.summary}
   image={entry.data.logo ? { url: entry.data.logo, alt: entry.data.name } : undefined}
 >
   <PageHeader 
     title={entry.data.name} 
-    backgroundImage="/uploads/ministry-detail-bg.webp"
+    backgroundImage="/uploads/coercitivo.png"
   />
   
   <section class="py-16">
@@ -61,19 +61,19 @@ const { Content } = await entry.render();
               )
             }
             
-            <h3 class="text-xl font-bold mb-4">Ministry Information</h3>
+            <h3 class="text-xl font-bold mb-4">Información del plan</h3>
             
             <div class="space-y-4 mb-6">
               {entry.data.coordinator && (
                 <div>
-                  <h4 class="font-bold text-gray-700">Coordinator</h4>
+                  <h4 class="font-bold text-gray-700">Coordinador</h4>
                   <p>{entry.data.coordinator}</p>
                 </div>
               )}
               
               {entry.data.contact && (
                 <div>
-                  <h4 class="font-bold text-gray-700">Contact</h4>
+                  <h4 class="font-bold text-gray-700">Contacto</h4>
                   {entry.data.contact.includes('@') ? (
                     <a href={`mailto:${entry.data.contact}`} class="text-primary-600 hover:text-primary-700">
                       {entry.data.contact}
@@ -86,19 +86,19 @@ const { Content } = await entry.render();
               
               {entry.data.schedule && (
                 <div>
-                  <h4 class="font-bold text-gray-700">Schedule</h4>
+                  <h4 class="font-bold text-gray-700">Tiempo</h4>
                   <p>{entry.data.schedule}</p>
                 </div>
               )}
             </div>
             
             <div class="flex flex-col space-y-3">
-              <Button href="/contact?subject=Ministry+Inquiry" variant="primary">
-                Get Involved
+              <Button href="/contact" variant="primary">
+                ¡Contáctanos!
               </Button>
               
               <Button href="/ministries" variant="outline">
-                Back to All Ministries
+                Volver a Todos los planes
               </Button>
             </div>
           </div>

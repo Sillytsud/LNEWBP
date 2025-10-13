@@ -1,10 +1,10 @@
 ---
-name: "Rev. Dr. John Smith"
-title: "Senior Pastor"
-image: "/uploads/staff/john-smith.webp"
-email: "pastor.john@churchname.org"
+name: "Matias"
+title: "Mocos"
+image: "/uploads/staff/mocos.png"
+email: "mocos@gmail.com"
 phone: "+1-555-0101"
-bio: "Pastor John has been faithfully serving our congregation for over 12 years, bringing wisdom, compassion, and biblical teaching to our community."
+bio: "nose"
 order: 1
 draft: false
 ---
