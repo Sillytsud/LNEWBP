@@ -1,7 +1,7 @@
 ---
 name: "Erik Gomez"
-title: "Otro pendejo"
-image: "/uploads/staff/erik.png"
+title: "Placeholder"
+image: "/uploads/staff/"
 email: "erikpugyt@gmail.com"
 phone: "+1-555-0103"
 bio: "Barbagris"

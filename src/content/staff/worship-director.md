@@ -1,7 +1,7 @@
 ---
 name: "Felipe Mazo"
 title: "El patron organico"
-image: "/uploads/staff/mazo.png"
+image: "/uploads/staff/"
 email: "felipemazo@gmail.com"
 phone: "+1-555-0104"
 bio: "El pasado de JJ"

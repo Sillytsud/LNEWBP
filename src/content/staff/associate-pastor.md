@@ -1,7 +1,7 @@
 ---
-name: "David Velez"
-title: "un puto pendejo"
-image: "/uploads/staff/velez.jpg"
+name: "Juanes"
+title: "descripcion generica"
+image: "/uploads/staff/juanes.png"
 email: "velezxcanas@gmail.com"
 phone: "+1-555-0102"
 bio: "nose"

@@ -10,7 +10,7 @@ order: 1
 draft: false
 ---
 
-## Nuestra misón
+## Nuestra Misón
 
 Brindar un acompañamiento integral a todas las personas que deciden, por voluntad propia, iniciar un proceso de rehabilitación. Nuestro propósito es ofrecer atención médica, psicológica, espiritual y social que contribuya a la recuperación, al fortalecimiento personal y a la reconstrucción de vínculos familiares y comunitarios.
 

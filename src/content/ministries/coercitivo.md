@@ -10,7 +10,7 @@ order: 2
 draft: false
 ---
 
-## Misión
+## Nuestra Misión
 
 Brindar atención integral a personas con adicciones que se encuentran en estado de negación o resistencia al tratamiento, mediante procesos estructurados y acompañamiento profesional que garanticen su bienestar, seguridad y recuperación, siempre dentro del marco del respeto, la ética y los derechos humanos.
 

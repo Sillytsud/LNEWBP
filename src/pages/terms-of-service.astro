@@ -1,0 +1,87 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHeader from "../components/Sections/PageHeader.astro";
+import Button from "../components/UI/Button.astro";
+---
+
+<BaseLayout
+  title="Términos y Condiciones - Fundación La Nueva Esperanza"
+  description="Consulta los términos de uso y condiciones de participación en los servicios y programas de la Fundación La Nueva Esperanza."
+>
+  <PageHeader
+    title="Términos y Condiciones"
+    subtitle="Conoce las normas que rigen el uso de nuestros servicios, programas y sitio web."
+    backgroundImage="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80"
+  />
+
+  <section class="py-16">
+    <div class="container max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6 text-center">Términos y Condiciones</h2>
+
+      <p class="text-gray-700 mb-6">
+        Los presentes Términos y Condiciones regulan el acceso y uso del sitio web, así como la participación en los programas y servicios ofrecidos por la <strong>Fundación La Nueva Esperanza</strong>. Al acceder a nuestros canales digitales o hacer uso de nuestros servicios, el usuario acepta cumplir con las políticas aquí descritas.
+      </p>
+
+      <h3 class="text-2xl font-semibold mb-4">1. Uso del sitio web</h3>
+      <p class="text-gray-700 mb-6">
+        El contenido del sitio web tiene fines informativos y educativos sobre los programas de rehabilitación y acompañamiento ofrecidos por la Fundación. Está prohibido el uso del sitio para actividades ilícitas, difamatorias, o que afecten la integridad de la organización o de terceros.
+      </p>
+
+      <h3 class="text-2xl font-semibold mb-4">2. Participación en programas</h3>
+      <p class="text-gray-700 mb-6">
+        La participación en los programas de rehabilitación, talleres o actividades está sujeta a una evaluación previa por parte del equipo profesional de la Fundación. La aceptación o continuidad del proceso dependerá del cumplimiento de los lineamientos internos, la disposición del participante y el respeto a las normas establecidas.
+      </p>
+
+      <h3 class="text-2xl font-semibold mb-4">3. Responsabilidad del usuario</h3>
+      <p class="text-gray-700 mb-6">
+        Los usuarios se comprometen a proporcionar información veraz y actualizada en todos los formularios o comunicaciones. Asimismo, deben abstenerse de compartir información falsa o utilizar los servicios con fines distintos a los autorizados por la Fundación.
+      </p>
+
+      <h3 class="text-2xl font-semibold mb-4">4. Propiedad intelectual</h3>
+      <p class="text-gray-700 mb-6">
+        Todo el contenido publicado en este sitio, incluyendo textos, imágenes, logotipos, gráficos y materiales informativos, es propiedad de la Fundación La Nueva Esperanza o de sus respectivos autores, y está protegido por las leyes de derechos de autor. Su reproducción total o parcial sin autorización previa está prohibida.
+      </p>
+
+      <h3 class="text-2xl font-semibold mb-4">5. Limitación de responsabilidad</h3>
+      <p class="text-gray-700 mb-6">
+        La Fundación no se hace responsable por daños directos o indirectos derivados del uso del sitio web, de la información publicada o de la interpretación de los contenidos. Los programas y procesos de rehabilitación son personalizados y los resultados pueden variar según cada caso.
+      </p>
+
+      <h3 class="text-2xl font-semibold mb-4">6. Enlaces externos</h3>
+      <p class="text-gray-700 mb-6">
+        Este sitio puede contener enlaces a páginas externas administradas por terceros. La Fundación no asume responsabilidad por el contenido, políticas o prácticas de dichos sitios, recomendando al usuario revisar sus propios términos y condiciones.
+      </p>
+
+      <h3 class="text-2xl font-semibold mb-4">7. Modificaciones</h3>
+      <p class="text-gray-700 mb-6">
+        La Fundación La Nueva Esperanza se reserva el derecho de modificar los presentes términos en cualquier momento. Las actualizaciones entrarán en vigor desde su publicación en el sitio web.
+      </p>
+
+      <h3 class="text-2xl font-semibold mb-4">8. Legislación aplicable</h3>
+      <p class="text-gray-700 mb-6">
+        Los presentes términos se rigen por las leyes de la República de Colombia. Cualquier controversia relacionada con su interpretación o cumplimiento será resuelta ante las autoridades competentes del país.
+      </p>
+
+      <div class="mt-12 text-center">
+        <Button class="back-btn" variant="outline" size="lg" href="javascript:history.back()">
+          Volver Atrás
+        </Button>
+
+        <script>
+          document.addEventListener('DOMContentLoaded', () => {
+            const backBtn = document.getElementsByClassName('back-btn');
+            if (backBtn.length > 0) {
+              backBtn[0].addEventListener('click', () => {
+                if (window.history.length > 1) {
+                  history.back();
+                } else {
+                  window.location.href = '/';
+                }
+              });
+            }
+          });
+        </script>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

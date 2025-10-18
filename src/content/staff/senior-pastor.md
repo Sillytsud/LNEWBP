@@ -1,7 +1,7 @@
 ---
 name: "Matias"
 title: "Mocos"
-image: "/uploads/staff/mocos.png"
+image: "/uploads/staff/"
 email: "mocos@gmail.com"
 phone: "+1-555-0101"
 bio: "nose"

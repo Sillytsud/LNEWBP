@@ -1,0 +1,88 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHeader from "../components/Sections/PageHeader.astro";
+import Button from "../components/UI/Button.astro";
+---
+
+<BaseLayout
+  title="Política de Privacidad - Fundación La Nueva Esperanza"
+  description="Conoce cómo protegemos tu información personal y los principios que guían el tratamiento de tus datos en la Fundación La Nueva Esperanza."
+>
+  <PageHeader
+    title="Política de Privacidad"
+    subtitle="Tu confianza es esencial para nosotros. Aquí te explicamos cómo cuidamos tus datos."
+    backgroundImage="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80"
+  />
+
+  <section class="py-16">
+    <div class="container max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6 text-center">Política de Privacidad</h2>
+
+      <p class="text-gray-700 mb-6">
+        En la <strong>Fundación La Nueva Esperanza</strong>, la protección de tu información personal es una prioridad. Esta política describe cómo recopilamos, usamos y protegemos los datos personales que nos proporcionas al interactuar con nuestra organización, ya sea a través de nuestro sitio web, formularios o cualquier otro medio de contacto.
+      </p>
+
+      <h3 class="text-2xl font-semibold mb-4">1. Recopilación de información</h3>
+      <p class="text-gray-700 mb-6">
+        Recopilamos información personal únicamente cuando es voluntariamente proporcionada por los usuarios, como al llenar formularios de contacto, inscribirse en programas o solicitar información. Los datos que podríamos solicitar incluyen nombre, correo electrónico, número de teléfono y cualquier otra información relevante para brindar un mejor servicio.
+      </p>
+
+      <h3 class="text-2xl font-semibold mb-4">2. Uso de la información</h3>
+      <p class="text-gray-700 mb-6">
+        La información que recopilamos se utiliza exclusivamente para los fines para los cuales fue proporcionada, incluyendo:
+      </p>
+      <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Responder consultas y solicitudes de información.</li>
+        <li>Ofrecer orientación o acompañamiento en los programas de la fundación.</li>
+        <li>Enviar comunicaciones relevantes sobre actividades, eventos o servicios.</li>
+        <li>Mejorar nuestros procesos internos y la atención al usuario.</li>
+      </ul>
+
+      <h3 class="text-2xl font-semibold mb-4">3. Confidencialidad y protección</h3>
+      <p class="text-gray-700 mb-6">
+        Nos comprometemos a proteger tu información personal bajo estrictos estándares de seguridad. Implementamos medidas técnicas, administrativas y físicas para prevenir accesos no autorizados, pérdida o alteración de los datos.
+      </p>
+
+      <h3 class="text-2xl font-semibold mb-4">4. Compartición de información</h3>
+      <p class="text-gray-700 mb-6">
+        No compartimos, vendemos ni cedemos tu información personal a terceros, salvo en los casos en que sea estrictamente necesario para cumplir obligaciones legales o cuando sea indispensable para la prestación de un servicio solicitado, siempre garantizando la confidencialidad.
+      </p>
+
+      <h3 class="text-2xl font-semibold mb-4">5. Derechos del titular de los datos</h3>
+      <p class="text-gray-700 mb-6">
+        Como titular de tus datos personales, tienes derecho a acceder, rectificar, actualizar o eliminar tu información en cualquier momento. También puedes solicitar la revocación de la autorización para su tratamiento, de acuerdo con la normativa vigente en materia de protección de datos personales en Colombia.
+      </p>
+
+      <h3 class="text-2xl font-semibold mb-4">6. Conservación de los datos</h3>
+      <p class="text-gray-700 mb-6">
+        Los datos personales se conservarán únicamente durante el tiempo necesario para cumplir los fines para los cuales fueron recolectados o mientras exista una relación activa con el titular, salvo disposición legal en contrario.
+      </p>
+
+      <h3 class="text-2xl font-semibold mb-4">7. Modificaciones a esta política</h3>
+      <p class="text-gray-700 mb-6">
+        La Fundación La Nueva Esperanza se reserva el derecho de modificar esta política de privacidad en cualquier momento. Cualquier cambio será publicado en nuestro sitio web y entrará en vigor desde la fecha de su publicación.
+      </p>
+
+      <div class="mt-12 text-center">
+        <Button class="back-btn"variant="outline" size="lg" href="javascript:history.back()">
+          Volver Atrás
+        </Button>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const backBtn = document.getElementsByClassName('back-btn');
+                if (backBtn.length > 0) {
+                    backBtn[0].addEventListener('click', () => {
+                        if (window.history.length > 1) {
+                            history.back();
+                        } else {
+                            window.location.href = '/';
+                        }
+                    })
+                }
+            })
+        </script>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
