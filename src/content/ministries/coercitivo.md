@@ -3,8 +3,8 @@ name: "Programa de Tratamiento Coercitivo"
 slug: "coercitivo"
 logo: "/uploads/ministries/participacion.png"
 summary: "Para casos de negación o cuando la adicción amenaza la seguridad personal o de terceros."
-coordinator: "Erik"
-contact: "e@o.a"
+coordinator: "Viviana"
+contact: "#"
 schedule: "12 Meses"
 order: 2
 draft: false

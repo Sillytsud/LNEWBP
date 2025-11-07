@@ -3,8 +3,8 @@ name: "Programa de Tratamiento Voluntario"
 slug: "voluntario"
 logo: "/uploads/ministries/voluntario.png"
 summary: "Brindar apoyo integral a quienes inician rehabilitación, con atención médica, psicológica, espiritual y social para facilitar la recuperación."
-coordinator: "Mocos"
-contact: "esperanza@fund.com"
+coordinator: "Viviana"
+contact: "#"
 schedule: "12 Meses"
 order: 1
 draft: false
